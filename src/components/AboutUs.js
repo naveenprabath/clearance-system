@@ -1,79 +1,68 @@
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
-import { Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import Col from 'react-bootstrap/Col';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Img4 from "../Images/b01.jpg";
+import Img4 from '../Images/b01.jpg'; 
 
+const backgroundImageStyle = {
+  backgroundImage: `url(${Img4})`,
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  minHeight: '100vh',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+};
 
-
+const transparentCardStyle = {
+  backgroundColor: 'rgba(255, 255, 255, 0.5)', 
+  minHeight: '50vh',
+  width: '300px',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+};
 
 function AboutUs() {
-
-  
-
-    return (
-<div >
-
-
-<img className="d-block w-100" src={Img4} alt="Image 1" style={{backgroundSize: 'cover',    backgroundPosition: 'center',}}></img>
-         
-<Row style={{alignItems:'center'}}>   
-
-
-      
-
-        <Col onMouseDown={.5}></Col>
-
-        <Col md={3} style={{alignItems:"center"}}>
-        <Card style={{ width: '18rem', minHeight: '40vh' }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Body>
-        <Card.Title>About us</Card.Title>
-        <Card.Text>
-         xxxxx
-        </Card.Text>
-       </Card.Body>
-       </Card>
-        </Col>
-
-        <Col md={3} style={{alignItems:"center"}}>
-        <Card style={{ width: '18rem', minHeight: '40vh' }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Body>
-        <Card.Title>About us</Card.Title>
-        <Card.Text>
-         xxxxx
-        </Card.Text>
-       </Card.Body>
-       </Card>
-        </Col>
-
-        <Col md={3} >
-          <Card style={{ width: '18rem', minHeight: '40vh' }}>
-           <Card.Img variant="top" src="holder.js/100px180" />
-           <Card.Body>
-           <Card.Title>The Team</Card.Title>
-           <Card.Text>
-            xxxxx
-           </Card.Text>
-          </Card.Body>
-           </Card>
-        </Col>
-
-        <Col onMouseDown={.5}></Col>
+  return (
+    <div style={backgroundImageStyle}>
+      <Row style={{ alignItems: 'center' }}>
         
-      </Row>
-    
-    
-      
-     
 
-      
-    
+        <Col md={4} style={{ alignItems: 'center' }}>
+          <Card style={transparentCardStyle}>
+            <Card.Body>
+              <Card.Title>About Us</Card.Title>
+              <Card.Text>xxxxx</Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+
+        <Col md={4} style={{ alignItems: 'center' }}>
+          <Card style={transparentCardStyle}>
+            <Card.Body>
+              <Card.Title>About Us</Card.Title>
+              <Card.Text>xxxxx</Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+
+        <Col md={4}>
+          <Card style={transparentCardStyle}>
+            <Card.Body>
+              <Card.Title>The Team</Card.Title>
+              <Card.Text>xxxxx</Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+
+       
+      </Row>
     </div>
-    )
+  );
 }
 
 export default AboutUs;

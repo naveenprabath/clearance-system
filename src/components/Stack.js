@@ -20,9 +20,7 @@ function HorizontalVerticalRulesExample()
       <a href="/Dashboard" className="p-2">
       <Button variant="primary">UOP</Button>
       </a>
-      <div className="p-2 ms-auto">
-        <Login/>
-      </div>
+      
         
       <div className="vr" />
       <div className="p-2 ms-auto">

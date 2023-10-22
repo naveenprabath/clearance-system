@@ -8,7 +8,12 @@ import Navbar from 'react-bootstrap/Navbar';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import AboutUs from "../components/AboutUs";
-import Login from "../pages/Login";
+import Login from "./Login";
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import FormControl from 'react-bootstrap/FormControl';
+import Signup from "./Signup";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 
 function Dashboard(){
@@ -28,35 +33,43 @@ function Dashboard(){
         backgroundColor: '#B40505'
       };
 
+      const cardStyle = {
+        width: '18rem',
+        backgroundColor: 'white',
+        minHeight: '40vh',
+        boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+        transform: 'perspective(1000px) ',
+        width: '18rem', 
+        color:'back', 
+        backgroundColor: "white" ,
+        minHeight: '40vh'
+      };
       
     return(
         
         <div style={pageStyles}>
+    <Navbar bg="blue" expand="lg" className="p-2" style={{backgroundColor: "#B40505"}} >
+      <div className="container">
+        <Navbar.Brand href="/Home" style={{ fontFamily: "times new roman", color: "#FFC53A", textAlign: "center",}}>University of Peradeniya </Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarNav" />
+        <Navbar.Collapse id="navbarNav">
+          <Nav className="me-auto">
             
-            <Navbar expand="lg"  className="bg-body-tertiary justify-content-between"  style={{background:"#B40505"}}>  
-                <Container>
-                <Navbar.Brand href="#home">University Of Peradeniya Faculty Of Science Clearnce System Dashboard</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="me-auto">
-                      
-                    
-                    
-                 <Form inline className="mr-4" >
-                    <Row >
-                    <Col >
-                        <Form.Control   type="text"  placeholder="Search" className=" mr-sm-2" />
-                        </Col>
-                        <Col  >
-                        <Button variant='outline-success'>Search</Button>
-                    </Col>
-                    
-                    </Row>
-                </Form>
-                </Nav>
-                </Navbar.Collapse>
-                </Container>
-            </Navbar>
+          </Nav>
+          <Form className="d-flex">
+            <FormControl type="text" placeholder="Search" className="mr-2" />
+            <div className="mx-2"></div>
+            <Button variant="primary" size="sm" style={{color:"black",}}>Search</Button>
+          </Form>
+          <Button variant="outline"  className="mx-2" size="sm" style={{color:"black",backgroundColor: "#B40505" }}>   <Login/>      </Button>
+          <Button variant="" className="mx-2" size="sm" style={{color:"black",}}>   <Signup/>      </Button>
+          <Form.Check type="switch" id="flexSwitchCheckDefault" label="DarkMode" style={{ '--switch-track-color': 'red', '--switch-thumb-color': 'black',
+  }}  />
+        </Navbar.Collapse>
+      </div>
+    </Navbar>
+    
+           
             <br/>
             <br/>
             
@@ -68,11 +81,12 @@ function Dashboard(){
                 
                 <Col  md={4} className="className=d-flex align-items-center justify-content-center p-1" >
                 
-                <Card style={{ width: '18rem', color:'back', backgroundColor: "white" ,minHeight: '40vh' }}>
+                <Card style={cardStyle}>
                      <Card.Body className="text-center">
                     <Card.Title>Home page</Card.Title>
+                    
                     <Card.Text>
-                        Add sutable icon
+                    <FontAwesomeIcon icon={faUser} />
                     </Card.Text>
                     <a href="/Home">
                     <Button variant="primary">Click Me</Button>
@@ -84,7 +98,7 @@ function Dashboard(){
                 </Col>
 
                 <Col  md={4} className="className=d-flex align-items-center justify-content-center p-1">
-                <Card style={{ width: '18rem', color:'back', backgroundColor: "#fd7e14" ,minHeight: '40vh' }}>
+                <Card style={cardStyle}>
                      <Card.Body className="text-center">
                     <Card.Title>Request Account</Card.Title>
                     <Card.Text>
@@ -98,7 +112,7 @@ function Dashboard(){
                 </Col>
 
                 <Col  md={4} className="className=d-flex align-items-center justify-content-center p-1">
-                <Card style={{ width: '18rem', color:'back', backgroundColor: "#fd7e14" ,minHeight: '40vh' }}>
+                <Card style={cardStyle}>
                      <Card.Body className="text-center">
                     <Card.Title> Login Interface</Card.Title>
                     <Card.Text>
@@ -113,9 +127,7 @@ function Dashboard(){
            
              </Row>
 
-             
-
-               
+             <br/>     
 
              
 
@@ -124,7 +136,7 @@ function Dashboard(){
                 
 
                 <Col  md={4} className="className=d-flex align-items-center justify-content-center p-1">
-                <Card style={{ width: '18rem', color:'back', backgroundColor: "#fd7e14",minHeight: '40vh' }}>
+                <Card style={cardStyle}>
                      <Card.Body className="text-center">
                     <Card.Title>Account Renew</Card.Title>
                     <Card.Text>
@@ -136,7 +148,7 @@ function Dashboard(){
                 </Col>
 
                 <Col  md={4} className="className=d-flex align-items-center justify-content-center p-1">
-                <Card style={{ width: '18rem', color:'back', backgroundColor: "#fd7e14" ,minHeight: '40vh' }}>
+                <Card style={cardStyle}>
                      <Card.Body className="text-center">
                     <Card.Title>Payment Gate</Card.Title>
                     <Card.Text>
@@ -148,7 +160,7 @@ function Dashboard(){
                 </Col>
 
                 <Col  md={4} className="className=d-flex align-items-center justify-content-center p-1">
-                <Card style={{ width: '18rem', color:'back', backgroundColor: "#fd7e14",minHeight: '40vh' }}>
+                <Card style={cardStyle}>
                      <Card.Body className="text-center">
                     <Card.Title>Admin Support</Card.Title>
                     <Card.Text>
@@ -162,19 +174,18 @@ function Dashboard(){
              </Row>
           
             </Container>
-            
-           <AboutUs style={{backgroundColor: 'blue'}}/>
+         
            
             
     
-    <footer style={{ background: 'lightgray', padding: '10px' }}>
+    <footer style={{ background: "#B40505", padding: '10px' }}>
                 <Container>
                 <Row>
                     <Col md={6}>
-                    <p>&copy; {new Date().getFullYear()} Your Company Name</p>
+                    <p style={{color:"#FFC53A"}}>&copy; {new Date().getFullYear()} Your Company Name</p>
                     </Col>
                     <Col md={6} className="text-right">
-                    <p>Contact: contact@example.com</p>
+                    <p  style={{color:"#FFC53A"}}>Contact: contact@example.com</p>
                     </Col>
                 </Row>
                 </Container>

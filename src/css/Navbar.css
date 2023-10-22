@@ -1,0 +1,36 @@
+
+.navbar {
+    background-color: blue;
+  }
+  
+  .navbar-nav {
+    background-color: inherit;
+  }
+  
+  .nav-link {
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  .nav-link:hover,
+  .nav-link:focus,
+  .nav-link:active {
+    background-color: darkblue;
+    color: white;
+  }
+  
+  
+  .btn-primary {
+    background-color: #007BFF; 
+    border-color: #007BFF;
+    font-weight: bold;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; 
+    border-color: #0056b3;
+  }
+  

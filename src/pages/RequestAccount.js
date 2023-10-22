@@ -1,187 +1,195 @@
 import React from "react";
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import { Col } from 'react-bootstrap';
-import Navbar from 'react-bootstrap/Navbar';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import { Col } from "react-bootstrap";
+import Navbar from "react-bootstrap/Navbar";
+import Form from "react-bootstrap/Form";
+import Nav from "react-bootstrap/Nav";
 import Login from "../pages/Login";
 import Signup from "../pages/Signup";
 import AccademiStaffSignup from "../pages/AccademiStaffSignup";
 import NonAccademiStaffSignup from "../pages/NonAccademiStaffSignup";
-import Alert from 'react-bootstrap/Alert';
+import Alert from "react-bootstrap/Alert";
+import FormControl from 'react-bootstrap/FormControl';
 
+function RequestAccount() {
+  const containerStyle = {
+    backgroundColor: "#F9C449",
 
-
-function RequestAccount(){
-    const containerStyle = {
-        backgroundColor: '#F9C449',
-               
-         minHeight: '10vh'
+    minHeight: "10vh",
   };
 
   const pageStyles = {
-    backgroundColor: '#63BCC9',
-    minHeight: '80vh'
+    
+    minHeight: "80vh",
   };
 
-  const navStyle = {
-    backgroundColor: 'White'
-  };
-  
+ 
+
   const textStyle = {
-    fontFamily: 'Arial, sans-serif', 
-    fontSize: '20px', 
-    lineHeight: '1.5',
-    textAlign: 'center' ,
-    marginTop: '20px', 
-    
+    fontFamily: "Arial, sans-serif",
+    fontSize: "20px",
+    lineHeight: "1.5",
+    textAlign: "center",
+    marginTop: "20px",
   };
   const rowStyle = {
-    padding:'10px',
-    textAlign: 'center', 
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    
-   
+    padding: "10px",
+    textAlign: "center",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
   };
 
-return(
+  const cardStyle = {
+    width: '18rem',
+    backgroundColor: 'white',
+    minHeight: '40vh',
+    boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+    transform: 'perspective(1000px) ',
+    width: '18rem', 
+    color:'back', 
+    backgroundColor: "white" ,
+    minHeight: '40vh'
+  };
+  return (
     <div style={pageStyles}>
-        
+    <header>
+    <Navbar bg="blue" expand="lg" className="p-2" style={{backgroundColor: "#B40505"}} >
+      <div className="container">
+        <Navbar.Brand href="/Home" style={{ fontFamily: "times new roman", color: "#FFC53A", textAlign: "center",}}>University of Peradeniya </Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarNav" />
+        <Navbar.Collapse id="navbarNav">
+          <Nav className="me-auto">
+            
+          </Nav>
+          <Form className="d-flex">
+            <FormControl type="text"  className="mr-2" />
+            <div className="mx-2"></div>
+            <Button variant="primary" size="sm" style={{ color: "black" }}>
+             Search
+            </Button>
+          </Form>
+          <div className="mx-2"></div>
+          <Form.Check type="switch" id="flexSwitchCheckDefault" label="DarkMode" style={{ '--switch-track-color': 'red', '--switch-thumb-color': 'black',
+  }}  />
+        </Navbar.Collapse>
+      </div>
+    </Navbar>
+    </header>
 
-            <Navbar expand="lg"  className="bg-body-tertiary justify-content-between"   style={{navStyle}}>
-                
-                <Navbar.Brand href="#home">University Of Peradeniya Faculty Of Science Clearnce System Dashboard</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="me-auto">
-                           
-                    
-                 <Form inline className="mr-4" >
-                    <Row >
-                    <Col >
-                        <Form.Control   type="text"  placeholder="Search" className=" mr-sm-2" />
-                        </Col>
-                        <Col  >
-                        <Button variant='outline-success'>Search</Button>
-                    </Col>
-                    
-                    </Row>
-                </Form>
-                </Nav>
-                </Navbar.Collapse>
-               
-            </Navbar> 
+      <br />
+
+      <Container style={containerStyle}>
+        <Row>
+          <Col style={{color:"#B40505"}}>
+            {" "}
+            <p style={textStyle}>
+              Note : This is a Request Account Dashboard and if will not Signup
+              plese Signup First.If you Sign Up go to University GSuite email
+              Click to...
+              <br />
+              <div className="p-2 ms-auto">
+                <Login />
+              </div>
+              .<br />{" "}
+            </p>
+          </Col>
+        </Row>
+      </Container>
+
+      <br />
+
+      <Container>
+        <Row style={rowStyle}>
           
-            
-            
-            
-            <br/>
-            
-            
-            <Container style={containerStyle}>
-                <Row>
-                    <Col> <p style={textStyle }>Note : This is a Request Account Dashboard and if will not Signup plese Signup First.If you Sign Up go to University GSuite email Click to...<br/><div className="p-2 ms-auto">
-        <Login/>
-      </div>.<br/>  </p></Col>
-                </Row>
-            </Container>
-            
-            <br/>
+        </Row>
+      </Container>
 
-            
-            <Container>
-            <Row style= {rowStyle}>
-            <hr style={{border: '1.5px solid blue'}}/>
-            <hr style={{border: '1.5px solid blue'}}/>
-            </Row>
-            </Container>
-
-            
-            <Container>
-             <Row md={6} className="className=d-flex align-items-center justify-content-center p-1"> 
-
-             <Col  md={4} className="className=d-flex align-items-center justify-content-center p-1">
-                <Card style={{ width: '18rem', color:'back', backgroundColor: 'White' ,minHeight: '40vh' }}>
-                     <Card.Body className="text-center">
-                    <Card.Title>ACCEDEMIC STAFF SIGNUP</Card.Title>
-                    <Card.Text>
-                        Add sutable icon
-                    </Card.Text>
-
-                    <div className="p-2 ms-auto">
-                        <AccademiStaffSignup/>
-                    </div>
-                    
-                   
-                    </Card.Body>
-                </Card>
-                </Col>
-              
-                <Col  md={4} className="className=d-flex align-items-center justify-content-center p-1">
-                <Card style={{ width: '18rem', color:'back', backgroundColor: 'White' ,minHeight: '40vh' }}>
-                     <Card.Body className="text-center">
-                    <Card.Title>NON ACCEDEMIC STAFF SIGNUP</Card.Title>
-                    <Card.Text>
-                        Add sutable icon
-                    </Card.Text>
-                    <div className="p-2 ms-auto">
-                        <NonAccademiStaffSignup/>
-                    </div>
-                    </Card.Body>
-                </Card>
-                </Col>
-
-                
-                <Col  md={4} className="className=d-flex align-items-center justify-content-center p-1">
-                <Card style={{ width: '18rem', color:'black', backgroundColor: 'White',minHeight: '40vh' }}>
-                     <Card.Body className="text-center">
-                    <Card.Title>STUDENT SIGNUP</Card.Title>
-                    <Card.Text>
-                        Add icon
-                    </Card.Text>
-                    <div className="p-2 ms-auto">
-                        <Signup/>
-                    </div>
-                    </Card.Body>
-                </Card>
-                </Col>
-
-                
-
-            </Row>
-            </Container>
-
-
-            <div>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            
-      
-      
-            <footer style={{ background: 'lightgray', padding: '10px' }}>
-                <Container>
-                <Row>
-                    <Col md={6}>
-                    <p>&copy; {new Date().getFullYear()} Your Company Name</p>
-                    </Col>
-                    <Col md={6} className="text-right">
-                    <p>Contact: contact@example.com</p>
-                    </Col>
-                </Row>
-                </Container>
-            </footer>
-            </div>
+        <Row
+          md={6}
+          className="className=d-flex align-items-center justify-content-center p-1"
+        >
+          
+          <Col md={3}
          
+            className="className=d-flex align-items-center justify-content-center p-1"
+          >
+            <Card
+              style={cardStyle}
+            >
+              <Card.Body className="text-center">
+                <Card.Title>ACCEDEMIC STAFF SIGNUP</Card.Title>
+                <Card.Text>Add sutable icon</Card.Text>
+
+                <div className="p-2 ms-auto">
+                  <AccademiStaffSignup />
+                </div>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col md={3}
+         
+            className="className=d-flex align-items-center justify-content-center p-1"
+          >
+            <Card
+              style={cardStyle}
+            >
+              <Card.Body className="text-center">
+                <Card.Title>NON ACCEDEMIC STAFF SIGNUP</Card.Title>
+                <Card.Text>Add sutable icon</Card.Text>
+                <div className="p-2 ms-auto">
+                  <NonAccademiStaffSignup />
+                </div>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col md={3}
+            
+            className="className=d-flex align-items-center justify-content-center p-1"
+          >
+            <Card
+              style={cardStyle}
+            >
+              <Card.Body className="text-center">
+                <Card.Title>STUDENT SIGNUP</Card.Title>
+                <Card.Text>Add icon</Card.Text>
+                <div className="p-2 ms-auto">
+                  <Signup />
+                </div>
+              </Card.Body>
+            </Card>
+          </Col>
+          
+        </Row>
+      
+
+      <div>
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <footer style={{ backgroundColor: "#B40505", padding: "10px" }}>
+          <Container>
+            <Row>
+              <Col md={6}>
+                <p style={{color: "#FFC53A"}}>&copy; {new Date().getFullYear()} Your Company Name</p>
+              </Col>
+              <Col md={6} className="text-right">
+                <p style={{color: "#FFC53A"}}>Contact: contact@example.com</p>
+              </Col>
+            </Row>
+          </Container>
+        </footer>
+      </div>
     </div>
-    );
+  );
 }
 
 export default RequestAccount;

@@ -41,7 +41,7 @@ function LoginAlert() {
 
   return (
     <div>
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="primary" onClick={handleShow} style={{ fontFamily: "times new roman",  color: "black",     textAlign: "center"}}>
         LogIn
       </Button>
 
