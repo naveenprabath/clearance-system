@@ -9,6 +9,7 @@ import Login from '../pages/Login';
 import Signup from '../pages/Signup';
 
 
+
 function Bar() {
   return (
     <Navbar bg="" expand="lg" className="p-2" style={{backgroundColor:"#B40505"}}>
@@ -19,8 +20,8 @@ function Bar() {
           <Nav className="me-auto">
             <Nav.Link href="/Dashboard" className="nav-link" style={{ fontFamily: "times new roman", color: "#FFC53A", textAlign: "center",}}>Dashboard</Nav.Link>
             <NavDropdown title="Department" id="basic-nav-dropdown" style={{ fontFamily: "times new roman", color: "goldenrod", textAlign: "center" }}>
-              <NavDropdown.Item href="/about">Department of Computer Science & Statistics</NavDropdown.Item>
-              <NavDropdown.Item href="/contact">Department of Zology</NavDropdown.Item>
+              <NavDropdown.Item href="/CS">Department of Computer Science & Statistics</NavDropdown.Item>
+              <NavDropdown.Item href="/Zoo">Department of Zology</NavDropdown.Item>
               <NavDropdown.Item href="/contact">Department of Biology</NavDropdown.Item>
               <NavDropdown.Item href="/contact">Department of Physics</NavDropdown.Item>
               <NavDropdown.Item href="/contact">Department of Chemistry</NavDropdown.Item>
@@ -36,12 +37,14 @@ function Bar() {
           </Nav>
           <Form className="d-flex">
             <FormControl type="text" placeholder="Search" className="mr-2" />
-            <Button variant="outline-success">Search</Button>
+            <div className="mx-1"></div>
+            <Button variant="primary" style={{color:"black"}} >Search</Button>
+            
           </Form>
-          <Button variant="primary"  className="mx-2" style={{color:"black", }}><div className="p ms-auto">
-        <Login/>       </div> </Button>
-          <Button variant="primary" className="mx-2" style={{color:"black"}}><div className="p ms-auto">
-        <Signup/>       </div></Button>
+          <Button variant="" size='sm'  className="mx-1" style={{color:"black", backgroundColor:"#B40505"}}>
+        <Login/>        </Button>
+          <Button variant="" size="sm " className="mx-1" style={{color:"black", backgroundColor:"#B40505"}}>
+        <Signup/>       </Button>
           <Form.Check type="switch" id="flexSwitchCheckDefault" label="DarkMode" style={{}} />
         </Navbar.Collapse>
       </div>

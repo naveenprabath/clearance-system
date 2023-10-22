@@ -24,8 +24,7 @@ function LoginAlert() {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    // Simulate a login request (replace with your actual authentication logic)
-    // In this example, we're checking if the username is "user" and the password is "password"
+    
     if (username === 'user' && password === 'password') {
       // Successful login
       setIsLoggedIn(true);

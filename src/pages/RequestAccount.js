@@ -157,7 +157,7 @@ function RequestAccount() {
               style={cardStyle}
             >
               <Card.Body className="text-center">
-                <Card.Title>STUDENT SIGNUP</Card.Title>
+                <Card.Title>STUDENT SIGNUP</Card.Title> 
                 <Card.Text>Add icon</Card.Text>
                 <div className="p-2 ms-auto">
                   <Signup />

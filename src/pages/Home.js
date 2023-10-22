@@ -56,13 +56,13 @@ function Home() {
       <Row style={rowStyle}></Row>
       <Row style={rowStyle}></Row>
 
-      <div style={{ backgroundColor: "#343a40" }}>
+      <div style={{ backgroundColor: "#B40505" }}>
         <Container>
           <br />
           <Row>
             <Col>
               <Card style={{ width: "18rem", background: "#fd7e14" }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+                
                 <Card.Body>
                   <Card.Title>Notice Board</Card.Title>
                   <Card.Text>Special notices about the Clearnce</Card.Text>
@@ -73,7 +73,7 @@ function Home() {
 
             <Col>
               <Card style={{ width: "18rem", background: "#fd7e14" }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+              
                 <Card.Body>
                   <Card.Title>Quick Link</Card.Title>
                   <Card.Text>Downloard the report</Card.Text>
@@ -84,7 +84,7 @@ function Home() {
 
             <Col>
               <Card style={{ width: "18rem", background: "#fd7e14" }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+                
                 <Card.Body>
                   <Card.Title>Quick Link</Card.Title>
                   <Card.Text>Online Payment</Card.Text>

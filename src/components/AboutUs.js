@@ -10,7 +10,7 @@ const backgroundImageStyle = {
   backgroundImage: `url(${Img4})`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
-  minHeight: '100vh',
+  minHeight: '60vh',
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',

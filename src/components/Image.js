@@ -15,10 +15,7 @@ function DarkVariantExample() {
         <Carousel.Item>
           <img className="d-block w-100" src={Img1} alt="Image 1" 
           style={{ width: '120px', height: '400px' }}/>
-          <Carousel.Caption>
-           
-            
-          </Carousel.Caption>
+          
         </Carousel.Item>
 
         <Carousel.Item>
@@ -26,10 +23,7 @@ function DarkVariantExample() {
             className="d-block w-100" src={Img2} alt="Image 2"
             style={{ width: '120px', height: '400px' }}/>
                     
-          <Carousel.Caption>
-            
-            <p></p>
-          </Carousel.Caption>
+          
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -39,12 +33,7 @@ function DarkVariantExample() {
             />
             
           
-          <Carousel.Caption>
-            
-            <p>
-              
-            </p>
-          </Carousel.Caption>
+          
         </Carousel.Item>
       </Carousel>
     </div>
