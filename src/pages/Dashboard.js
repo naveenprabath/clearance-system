@@ -65,122 +65,116 @@ function Dashboard(){
           <Button variant="outline"  className="mx-1" size="sm" style={{color:"black",backgroundColor: "#B40505" }}>   <Login/>      </Button>
           <Button variant="" className="mx-1" size="sm" style={{color:"black",}}>   <Signup/>      </Button>
           <Form.Check type="switch" id="flexSwitchCheckDefault" label="DarkMode" style={{ '--switch-track-color': 'red', '--switch-thumb-color': 'black',
-  }}  />
+            }}  />
         </Navbar.Collapse>
-      </div>
-    </Navbar>
-    
-           
-            <br/>
-            <br/>
-            
-            
-  
-            <Container style={containerStyle}>
-  <Row md={6} className="className=d-flex align-items-center justify-content-center p-1">
-    <Col md={4} className="className=d-flex align-items-center justify-content-center p-1">
-      <Card style={cardStyle}>
-        <Card.Body className="text-center">
-          <Card.Title>Home page</Card.Title>
-          <br />
-          <Card.Text>
-            <FontAwesomeIcon icon={faHome} style={{ fontSize: 120 }} />
-          </Card.Text>
-          <a href="/Home">
-            <Button variant="primary" style={{color:"black"}}>Click Me</Button>
-          </a>
-        </Card.Body>
-      </Card>
-    </Col>
-    <Col md={4} className="className=d-flex align-items-center justify-content-center p-1">
-      <Card style={cardStyle}>
-        <Card.Body className="text-center">
-          <Card.Title>Request Account</Card.Title>
-          <br/>
-          <Card.Text>
-            <FontAwesomeIcon icon={faUserPlus} style={{ fontSize: 120 }} />
-          </Card.Text>
-          <a href="/RequestAccount">
-            <Button variant="primary" style={{color:"black"}}>Click Me</Button>
-          </a>
-        </Card.Body>
-      </Card>
-    </Col>
-    <Col md={4} className="className=d-flex align-items-center justify-content-center p-1">
-      <Card style={cardStyle}>
-        <Card.Body className="text-center">
-          <Card.Title>Login Interface</Card.Title>
-          <br/>
-          <Card.Text>
-            <FontAwesomeIcon icon={faSignInAlt} style={{ fontSize: 120 }} />
-          </Card.Text>
-          <div className="p-2 ms-auto">
-            <Login />
           </div>
-        </Card.Body>
-      </Card>
-    </Col>
-  </Row>
-  <br />
-  <Row md={6} className="className=d-flex align-items-center justify-content-center p-1">
-    <Col md={4} className="className=d-flex align-items-center justify-content-center p-1">
-      <Card style={cardStyle}>
-        <Card.Body className="text-center">
-          <Card.Title>Account Renew</Card.Title>
-          <br/>
-          <Card.Text>
-            <FontAwesomeIcon icon={faCalendarAlt} style={{ fontSize: 120 }} />
-          </Card.Text>
-          <Button variant="primary" style={{color:"black"}}>Click Me</Button>
-        </Card.Body>
-      </Card>
-    </Col>
-    <Col md={4} className="className=d-flex align-items-center justify-content-center p-1">
-      <Card style={cardStyle}>
-        <Card.Body className="text-center">
-          <Card.Title>Payment Gate</Card.Title>
-          <br/>
-          <Card.Text>
-            <FontAwesomeIcon icon={faCreditCard} style={{ fontSize: 120 }} />
-          </Card.Text>
-          <Button variant="primary" style={{color:"black"}} > Click Me</Button>
-        </Card.Body>
-      </Card>
-    </Col>
-    <Col md={4} className="className=d-flex align-items-center justify-content-center p-1">
-      <Card style={cardStyle}>
-        <Card.Body className="text-center">
-          <Card.Title>Admin Support</Card.Title>
-          <br/>
-          <Card.Text>
-            <FontAwesomeIcon icon={faHeadset} style={{ fontSize: 120 }} />
-          </Card.Text>
-          <Button variant="primary" style={{color:"black"}}>Click Me</Button>
-        </Card.Body>
-      </Card>
-    </Col>
-  </Row>
-</Container>
-<br/>
+            </Navbar>
+             
+            <br/>
+            <br/>
+               <Container style={containerStyle}>
+                <Row md={6} className="className=d-flex align-items-center justify-content-center p-1">
+                  <Col md={4} className="className=d-flex align-items-center justify-content-center p-1">
+                    <Card style={cardStyle}>
+                      <Card.Body className="text-center">
+                        <Card.Title>Home page</Card.Title>
+                        <br />
+                        <Card.Text>
+                          <FontAwesomeIcon icon={faHome} style={{ fontSize: 120 }} />
+                        </Card.Text>
+                        <a href="/Home">
+                          <Button variant="primary" style={{color:"black"}}>Click Me</Button>
+                        </a>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                <Col md={4} className="className=d-flex align-items-center justify-content-center p-1">
+                  <Card style={cardStyle}>
+                    <Card.Body className="text-center">
+                      <Card.Title>Request Account</Card.Title>
+                      <br/>
+                      <Card.Text>
+                        <FontAwesomeIcon icon={faUserPlus} style={{ fontSize: 120 }} />
+                      </Card.Text>
+                      <a href="/RequestAccount">
+                        <Button variant="primary" style={{color:"black"}}>Click Me</Button>
+                      </a>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col md={4} className="className=d-flex align-items-center justify-content-center p-1">
+                  <Card style={cardStyle}>
+                    <Card.Body className="text-center">
+                      <Card.Title>Login Interface</Card.Title>
+                      <br/>
+                      <Card.Text>
+                        <FontAwesomeIcon icon={faSignInAlt} style={{ fontSize: 120 }} />
+                      </Card.Text>
+                      <div className="p-2 ms-auto">
+                        <Login />
+                      </div>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              </Row>
+              <br />
+              <Row md={6} className="className=d-flex align-items-center justify-content-center p-1">
+                <Col md={4} className="className=d-flex align-items-center justify-content-center p-1">
+                  <Card style={cardStyle}>
+                    <Card.Body className="text-center">
+                      <Card.Title>Account Renew</Card.Title>
+                      <br/>
+                      <Card.Text>
+                        <FontAwesomeIcon icon={faCalendarAlt} style={{ fontSize: 120 }} />
+                      </Card.Text>
+                      <Button variant="primary" style={{color:"black"}}>Click Me</Button>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col md={4} className="className=d-flex align-items-center justify-content-center p-1">
+                  <Card style={cardStyle}>
+                    <Card.Body className="text-center">
+                      <Card.Title>Payment Gate</Card.Title>
+                      <br/>
+                      <Card.Text>
+                        <FontAwesomeIcon icon={faCreditCard} style={{ fontSize: 120 }} />
+                      </Card.Text>
+                      <Button variant="primary" style={{color:"black"}} > Click Me</Button>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col md={4} className="className=d-flex align-items-center justify-content-center p-1">
+                  <Card style={cardStyle}>
+                    <Card.Body className="text-center">
+                      <Card.Title>Admin Support</Card.Title>
+                      <br/>
+                      <Card.Text>
+                        <FontAwesomeIcon icon={faHeadset} style={{ fontSize: 120 }} />
+                      </Card.Text>
+                      <Button variant="primary" style={{color:"black"}}>Click Me</Button>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              </Row>
+            </Container>
+            <br/>
 
-         
-           
             
     
-    <footer style={{ background: "#B40505", padding: '10px' }}>
-                <Container>
-                <Row>
-                    <Col md={6}>
-                    <p style={{color:"#FFC53A"}}>&copy; {new Date().getFullYear()} Your Company Name</p>
-                    </Col>
-                    <Col md={6} className="text-right">
-                    <p  style={{color:"#FFC53A"}}>Contact: contact@example.com</p>
-                    </Col>
-                </Row>
-                </Container>
-            </footer>
-          
-        </div>
+        <footer style={{ background: "#B40505", padding: '10px' }}>
+                    <Container>
+                    <Row>
+                        <Col md={6}>
+                        <p style={{color:"#FFC53A"}}>&copy; {new Date().getFullYear()} Your Company Name</p>
+                        </Col>
+                        <Col md={6} className="text-right">
+                        <p  style={{color:"#FFC53A"}}>Contact: contact@example.com</p>
+                        </Col>
+                    </Row>
+                    </Container>
+                </footer>
+              
+            </div>
 
     );
 }

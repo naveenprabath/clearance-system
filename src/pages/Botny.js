@@ -8,7 +8,6 @@ import Button from 'react-bootstrap/Button';
 import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
 
-
 function  Botny(){ 
   const hrStyle = {
     border: "3px solid #000", 
